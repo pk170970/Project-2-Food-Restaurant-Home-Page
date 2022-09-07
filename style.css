@@ -1,5 +1,143 @@
-/* ------------------1.5hr ------------------ */
+*,*::after, *::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+:root{
+  --font-1: 'Dela Gothic One';
+  --font-2: "Red Rose", cursive;
+}
+
+img{
+  max-width: 100%;
+}
+
+.container{
+  height: 100vh;
+  background-color:rgb(19, 28, 72,0.5);
+  overflow: hidden;
+}
+
+.container::before{
+    left: 0;
+    content: "";
+    width: 100vw;
+    height: 100vh;
+    background: url("./assets/pexels-maxyne-barcel-10402282\ 1.png") no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+section{
+  padding: 1em 2em;
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.logo{
+  width: 50%;
+}
+
+.list{
+  display: none;
+  list-style: none;
+  font-size: 1rem;
+  gap: 3em;
+  color: #FEC533;
+  font-family: var(--font-2);
+}
+
+.button-small{
+  padding: 0.5em 1.5em;
+  background-color: #FF505F;
+  color: white;
+  border: none;
+  font-weight: bold;
+}
+.button-small:hover, .button-small:focus{
+  background-color: black;
+}
+
+
+.hero{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding-top: 3em;
+  gap: 1.5em;
+}
+
+.hero-heading{
+  font-size: 2.2rem;
+  font-family: var(--font-2);
+  font-weight: bolder;
+  color: #FEC533;
+  max-width: 600px;
+}
+
+.button-large{
+  padding: 1.5em 2em;
+  background-color: #FF505F;
+  color: white;
+  border: none;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.bottom-logo{
+  max-width: 20%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+
+
+@media (min-width:550px){
+  html{
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width:1000px){
+  .list{
+    display: flex;
+  }
+
+  .logo{
+    width: 80%;
+  }
+  .button-small{
+    font-size: 1rem;
+  }
+}
+
+@media (min-width:1300px){
+  html{
+    font-size: 1.7rem;
+  }
+  .hero-heading{
+    font-size:2.5rem;
+    max-width: 700px;
+  }
+}
+
+
+
+
+
+
+/*
 * {
   margin: 0;
   padding: 0;
@@ -32,11 +170,11 @@ body {
 /* ------------------------------ */
 /* ---------- NAVBAR ------------ */
 /* ------------------------------ */
-
+/*
 .navbar {
   display: flex;
   justify-content: space-between;
-  /* background-color: red; */
+  background-color: red;
   padding: 10px 10px;
   align-items: center;
   height: 20vh;
@@ -83,7 +221,7 @@ body {
 /* ------------------------------ */
 /* ---------- HERO ------------ */
 /* ------------------------------ */
-
+/*
 .hero {
   display: flex;
   flex-direction: column;
@@ -125,3 +263,5 @@ body {
   right: 63px;
   bottom: 15px;
 }
+
+*/
